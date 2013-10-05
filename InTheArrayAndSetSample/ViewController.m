@@ -38,8 +38,8 @@
   NSSet *mySet = [NSSet setWithArray:myArray];
   
   //順序付けされたセットを作成する
-  NSOrderedSet *orderdSet;
-  orderdSet = [NSOrderedSet orderedSetWithArray:myArray];
+  NSOrderedSet *orderedSet;
+  orderedSet = [NSOrderedSet orderedSetWithArray:myArray];
   
   //オブジェクトを全て取得する
   id value;
@@ -53,7 +53,7 @@
   }
   
   //高速列挙を使用して順序付けされたセットからオブジェクトを取得する
-  for (value in orderdSet) {
+  for (value in orderedSet) {
     NSLog(@"%@", value);
   }
 }
